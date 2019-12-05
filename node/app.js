@@ -12,7 +12,7 @@ require('dotenv').config();
 const port = process.env.PORT;
 
 //routes
-//var indexRouter = require('./routes/index');
+var adminRouter = require('./routes/admin');
 
 
 var app = express();
@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
 //
-//app.use('/', indexRouter);
+app.use('/admin', adminRouter);
 //app.use('/users', usersRouter);
 
 // Add Headers
