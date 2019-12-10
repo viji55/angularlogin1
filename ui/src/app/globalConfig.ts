@@ -17,6 +17,10 @@ export const GlobalVariable = Object.freeze({
     ShowFirstLastButtons: true
 })
 
+export const GlobalFormSupporter = Object.freeze({
+    emailPattern: '^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$',
+});
+
 const customerApi = 'customer';
 const adminApi    = 'admin';
 export const NodeApiUrl = Object.freeze({

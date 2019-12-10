@@ -11,7 +11,7 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const port = process.env.PORT;
 
-//routes
+// import routes
 var adminRouter = require('./routes/admin');
 
 
@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //cors
 app.use(cors());
 
-//
+//name the routes and set it on angular request [http://localhost/admin/login]
 app.use('/admin', adminRouter);
 //app.use('/users', usersRouter);
 

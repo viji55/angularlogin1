@@ -9,7 +9,8 @@
               <input matInput placeholder="Email" formControlName="email" (focus)="myFocusVar = true" (blur)="myFocusVar = false">
               <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
               <mat-error *ngIf="!myForm.controls.email.valid || !formValid">
-                 Email is <strong>required</strong></mat-error>
+                 Email is <strong>required</strong>/<strong>invalid</strong> 
+               </mat-error>
            </mat-form-field>
            <mat-form-field>
               <input type="password" matInput placeholder="password" formControlName="password">
